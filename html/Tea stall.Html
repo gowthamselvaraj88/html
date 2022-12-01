@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title text-align:bold>Graduate Tea Stall</title>
+        <style>
+          button{
+            padding: 15px 100px;
+            background-color: crimson;
+            font-style: italic;
+            text-shadow: 20px;
+          }
+            body {
+  background-image:url("tea.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+table ,th,tr, td{
+    border: 1px solid rgb(0, 47, 255);background-color: aqua;
+}
+tr:hover {background-color: coral;}
+table{page-break-inside: avoid;}
+.page{page-break-inside: always;}
+.tableToggle + input[type="myTable"] {display:none;}
+
+
+        </style>
+    </head>
+    <body>
+        <h2 style="padding: 0in;margin-bottom: color rgb(12, 8, 3); color: rgb(203, 8, 8);text-align: center; size: 50%;">Graduate Tea Stall<img src="drawtea.gif"></h2>
+        <h4 style="color: brown; text-align: right ; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Degree is where....the tea is<img src="drawtea.jpg"></h4>
+        
+        <button style="size: 10pxi;" onClick="toggleTable()">Order Now</button>
+
+        <table id="myTable" style="width:50%;" class="hidden:center">
+        
+          <tr>
+        
+            <th>Drinks</th>
+
+            <th>Rate</th>
+        
+            <th>Snacks</th> 
+        
+            <th>Rate</th>
+        
+          </tr>
+        
+          <tr>
+        
+            <td>Tea</td>
+        
+            <td>10</td> 
+        
+            <td>Baji-2</td>
+
+            <td>15</td>
+        
+          </tr>
+        
+          <tr>
+        
+            <td>Coffee</td>
+        
+            <td>20</td> 
+        
+            <td>Vadai-2</td>
+
+            <td>12</td>
+        
+          </tr>
+          <tr>
+        
+            <td>lemon Tea</td>
+        
+            <td>20</td> 
+        
+            <td>Bonda-2</td>
+
+            <td>12</td>
+        
+          </tr>
+          <tr>
+        
+            <td>Green Tea</td>
+        
+            <td>20</td> 
+        
+            <td>Vadai pav-2</td>
+
+            <td>30</td>
+        
+          </tr>
+          <tr>
+        
+            <td>Black tea and coffee</td>
+        
+            <td>20</td> 
+        
+            <td>Samosa-2</td>
+
+            <td>20</td>
+        
+          </tr>
+        </table>
+       
+        <button style="position:static ;" onclick="window.print()">Print this page</button>
+        
+
+<script>
+    function toggleTable() {
+
+document.getElementById("myTable").classList.toggle("hidden");
+}
+
+/*If else statement*/
+
+const table = tea(); 
+let greeting;
+
+if (hour < 11) {
+  greeting = "Combo for Tea"<br>"(Tea + Cookies-2)";
+} else {
+  greeting = "Combo for Coffee"<br>"(Coffee + Cookies-2)";
+}
+
+document.getElementById("demo").innerHTML = greeting;
+
+</script>
+    </body>
+</html>
