@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<h2>Using the XMLHttpRequest Object</h2>
+
+<div id="demo">
+<button type="button" onclick="loadXMLDoc()">Change Content</button>
+</div>
+
+<script>
+function loadXMLDoc() {
+  var xhttp = new XMLHttpRequest();//0
+  xhttp.onreadystatechange = function() {//3 &//4
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://restcountries.com/v3.1/name/peru", true);//1
+  xhttp.send();//2
+}
+</script>
+</body>
+</html>

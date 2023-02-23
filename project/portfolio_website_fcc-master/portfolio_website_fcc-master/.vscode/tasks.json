@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "Live Preview",
+			"workspacePath": "c:\\Users\\Krishnan Udhaya\\Desktop\\gowtham\\project\\portfolio_website_fcc-master\\portfolio_website_fcc-master",
+			"problemMatcher": [],
+			"label": "Live Preview: Run Server"
+		}
+	]
+}

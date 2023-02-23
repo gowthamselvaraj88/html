@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        <title>HTML-test</title>
+        <style>
+            html{
+                display: block;
+            }
+            * {
+  box-sizing: border-box;
+}
+            .header{
+                background-color: #666;
+  padding: 50px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+            }
+            .nav {
+                float: center;
+                 background: #ccc;
+                    padding: 30px;
+                    }
+
+           .article{
+                 float: right;
+                 padding: 30px;
+                 width: 70%;
+                 background-color: #f1f1f1;
+                 height: 300px;
+                 }
+                 .section {
+                                    padding: 50px;
+                                    float: right;
+                                    display: table;
+                                    background-color: aqua;
+                                    width: 70%;
+                                    height: 300px;
+                                }
+                                .footer {
+                                background-color: #777;
+                                padding: 50px;
+                                text-align: center;
+                                color: white;
+                                }
+                                @media (max-width: 1000px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+                                }
+        </style>
+        </head>
+        <body>
+                <div class="header">Header</div>
+                <div class="nav">nav</div>
+                <div class="section">selction</div>
+                <div class="article">article</div>
+                <div class="footer">foooter</div>
+            
+        </body>
+    </html>

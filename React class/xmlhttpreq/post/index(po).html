@@ -1,0 +1,40 @@
+<html>
+<body>
+
+<h2>Using the XMLHttpRequest Object</h2>
+
+<div id="demo">
+<button type="button" onclick="loadXMLDoc()">Req data</button>
+</div>
+
+<script>
+// function loadXMLDoc() {
+//   var xhttp = new XMLHttpRequest();
+//   console.log(xhttp);
+//   xhttp.onreadystatechange = function() {
+//     if (this.readyState == 4 && this.status == 200) {
+//       document.getElementById("demo").innerHTML =
+//       this.responseText;
+//     }
+//   };
+  xhr.onreadystatechange = function() {
+  if (xhr.readyState === XMLHttpRequest.DONE) {
+    if (xhr.status === 200) {
+      // Request successful
+      document.getElementById("demo").innerHTML =
+       this.responseText;
+    } else {
+      // Request failed
+      console.log('Error: ' + xhr.status);
+    }
+  }
+};
+{
+  xhr.open('POST', 'C:\Users\Krishnan Udhaya\Desktop\gowtham\React class\xmlhttpreq\post\gowtham.txt', true);
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.send('name=John&age=30');
+}   
+</script>
+</body>
+</html>
+

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            html {
+                display: block;
+                border-radius: 50%;
+                height: 500px;
+            }
+            body{
+                margin-top: 0;
+                margin-left: 0;
+                position: relative;
+                 width: 1700px;
+                 height: 700px;
+            }
+            .item1 { grid-area: header; }
+            .item2 { grid-area: nav; }
+            .item3 { grid-area: menu; }
+            .item4 { grid-area: main; }
+            .item5 { grid-area: section; }
+            .item6 { grid-area: footer; }
+            .grid-container{
+                display: grid;
+                background-color: antiquewhite;
+                grid-template-areas:
+                ' header header header header header'
+                 'nav nav nav nav nav'
+                 'menu main main section section'
+                 'menu main main section section'
+                 'footer footer footer footer footer ';
+                 margin-top: 0;
+                 padding: 20px;
+                 gap: 10px;
+                 width: 90%;
+                 height: 100%;
+                position: absolute;
+            }
+            .grid-container div{
+                 background-color: aqua;
+                 text-align: center;
+                 font-style: initial;
+            }
+            .item1{
+                padding-top: 30px;
+            }
+            .item2{
+                padding-top: 20px;
+            }
+            .item3{
+                padding-top: 80px;
+            }
+            .item4{
+                padding-top: 80px;
+            }
+            .item5{
+                padding-top: 80px;
+            }
+            .item6{
+                padding-bottom: 30px;
+            }
+        </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">nav</div>
+        <div class="item3">menu</div>
+        <div class="item4">main</div>
+        <div class="item5">section</div>
+        <div class="item6">footer</div>
+    </div>
+
+</body>
+</html>
+    
+        

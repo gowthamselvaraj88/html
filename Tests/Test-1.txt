@@ -1,0 +1,59 @@
+1.using class?
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"> </p>
+    <script>
+        class test{Add}
+        var z=6;
+        var y=7;
+            
+           
+        document.getElementById("demo").innerHTML="Total number is"+ " "+z+y;
+        
+    </script>
+</body>
+</html>
+
+2.using loop for in?
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const Student= {name:"gowtham",add:"erode",contect:8883087225};
+        let frist ="";
+          for (let x in Student){
+            frist+= Student[x] +" ";
+          }
+           
+        document.getElementById("demo").innerHTML=frist; 
+    </script>
+</body>
+</html>
+
+
+
+3.create table and set primary key?
+
+CREATE TABLE `gowtham`.`school2` (
+  `STUDENTROLLNO` INT NOT NULL,
+  `STUDENTNAME` VARCHAR(45) NULL,
+  `STUDENTADDRESS` VARCHAR(45) NULL,
+  `STUDENTCONTECT` VARCHAR(45) NULL,
+  `STUDENTMAIL` VARCHAR(45) NULL,
+  PRIMARY KEY (`STUDENTROLLNO`),
+  UNIQUE INDEX `STUDENTROLLNO_UNIQUE` (`STUDENTROLLNO` ASC) VISIBLE);

@@ -1,0 +1,24 @@
+I have strong knowledge in spring boot technology and have 4 year experience in backend development.
+Please share your availability for detailed discussion.
+
+
+I had a strong experience in Apache PDFBox.
+
+It may take 3 months for development and testing.
+Backend : Java -Spring Boot,
+Frontend : React Js
+Database: MySql
+I will share the architecture and deployment diagram for references*.
+
+
+https://www.upwork.com/jobs/~011ff61d09a5a4a50d
+
+You will be asked to answer the following questions when submitting a proposal:
+
+Tell us about a significant Microservice that you have designed and built. What were the main design challenges? How did you solve the design challenges?
+What is the most innovative project that you have worked on? What was your role and contribution to the project?
+Imagine you are working on a PaaS project. Your role is to design, build, deploy and manage one or microservices. What are the key deliverables that you should produce when building a microservice? What is the definition of "Done" for a Microservice?
+Describe your recent experience with similar projects
+
+
+Harish - testing ==> https://www.upwork.com/jobs/~01e85ebe3bfeca712c
